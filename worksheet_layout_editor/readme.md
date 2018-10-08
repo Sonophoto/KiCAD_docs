@@ -40,24 +40,33 @@ Information contained in the `File | Page Settings...` menu are interpolated int
 
 ### Metadata for the design
 
-    `%T` Title
-    `%Y` Company name
-    `%D` Date
-    `%R` Revision
+`%T` Title
+
+`%Y` Company name
+
+`%D` Date
+
+`%R` Revision
 
 ### Metadata for the document.:
 
-    `%P` File system's path to this sheet.
-    `%F` Filename
-    `%K` KiCad version
-    `%S` Sheet number
-    `%N` Number of sheets in project
-    `%Z` Paper format name (A4, USLetter …)
+`%P` File system's path to this sheet.
+
+`%F` Filename
+
+`%K` KiCad version
+
+`%S` Sheet number
+
+`%N` Number of sheets in project
+
+`%Z` Paper format name (A4, USLetter …)
 
 ### Additional Information:
 
-    `%%` Escapes the `'%'`, prints a `'%'` in your worksheet.
-    `%Cx` Comment (x = 0 to 9 to identify the comment)
+`%%` Escapes the `'%'`, prints a `'%'` in your worksheet.
+
+`%Cx` Comment (x = 0 to 9 to identify the comment)
     
 There are no special variables for Approvals, Authors, Copyright Notices, Patent Numbers, etc. This information must be added to each document as static text or you can use the comment variables to add them to the project.
 
