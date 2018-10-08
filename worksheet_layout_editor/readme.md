@@ -1,5 +1,7 @@
 **VERSION:** _This documentation was created using KiCAD 5.0 (release)_
+
 **DATE:** _07-OCT-2018_
+
 **AUTHOR:** Brig Young, github.com/sonophoto
 
 # OPENING AND EDITING THE DEFAULT TEMPLATE:
@@ -21,7 +23,7 @@
 
 Now you have a default worksheet template opened and ready to edit.
 
-**Aside Note:** If you want to dive right into the text file go to the main KiCAD window and right click on the file's name in the project tree and select `Edit in a Text Editor`. You can setup KiCAD to use your preferred editor such as vim, emacs, code, notetab etc. by selecting the menu item `Preferences | Set Text Editor...` in the main KiCAD window. This plain text file is composed of single line records that described the worksheet layout and names variables that are automatically filled in from information contained in each schematic. The Projects main `.pro` file contains the reference that specifies which worksheet template to use, and each schematic can have metadata records that will populate the worksheet template for each individual schematic. [Working with the text file directly](TODO)
+**Aside Note:** If you want to dive right into the text file go to the main KiCAD window and right click on the file's name in the project tree and select `Edit in a Text Editor`. You can setup KiCAD to use your preferred editor such as vim, emacs, code, notetab etc. by selecting the menu item `Preferences | Set Text Editor...` in the main KiCAD window. This plain text file is composed of single line records that described the worksheet layout and names variables that are automatically filled in from information contained in each schematic. The Projects main `.pro` file contains the reference that specifies which worksheet template to use, and each schematic can have metadata records that will populate the worksheet template for each individual schematic. [Working with the text file directly](https://github.com/Sonophoto/KiCAD_docs/blob/master/worksheet_layout_editor/TextFormat.md)
 
 # POPULATE A SCHEMATIC WITH METADATA
 1. Start **Eeschema** from the main KiCAD window.
@@ -32,7 +34,7 @@ The metadata should appear in the worksheet of Eeschema immediately when you cli
 
 # MODIFYING A DEFAULT WORKSHEET TEMPLATE:
 
-Information contained in the File|Page Settings... menu are interpolated into the worksheet automatically according to a set of place holders that are called "format symbols" (!?) these are in fact template variables and are interpolated automatically by KiCAD when you complete these details in the Page Settings dialog of Eeschema. The checkbox item `Export to other sheets` can be used to propogate a variable to all sheets in a project. This could be useful for the company name variable for example.
+Information contained in the `File | Page Settings...` menu are interpolated into the worksheet automatically according to a set of place holders that are called "format symbols" (!?) these are in fact template variables and are interpolated automatically by KiCAD when you complete these details in the Page Settings dialog of Eeschema. The checkbox item `Export to other sheets` can be used to propogate a variable to all sheets in a project. This could be useful for the company name variable for example.
 
 ## The documented variables are:
 
