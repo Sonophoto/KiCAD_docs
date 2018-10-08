@@ -1,32 +1,64 @@
-Notes:
+**VERSION:** _This documentation was created using KiCAD 5.0 (release)_
+**DATE:** _07-OCT-2018_
+**AUTHOR:** Brig Young, github.com/sonophoto
 
-LOADING A DEFAULT WORKSHEET TEMPLATE:
+# OPENING AND EDITING THE DEFAULT TEMPLATE:
 
-Start Page Layout Editor  (AKA Worksheet Layout Editor)
-open pagelayout_default.kicad_wks
-save as: yourname.kicad_wks in the root of your project
+1. Start Page Layout Editor in the main KiCAD window (AKA Worksheet Layout Editor)
+2. Choose menu item `File | Open...`
+3. In the dialog box navigate to the location of your KiCAD installation's shared data, on Linux/unix systems with will likely be `/usr/local/share/kicad/template` or `/usr/share/kicad/template`; on windows systems the path will likely be `C:\[TODO]`
+4. Select the file named: `pagelayout_default.kicad_wks`
+5. Click the `Open` button
+6. Choose menu item `File | Save As...`
+7. Examine the selected directory in the file browser and verify that it is the root of your project's directory. If not you will need to use the file browser to navigate to the root of your project. (The root of your project is the location of your project's .pro file)
+8. In the text field at the top of the pop-up window enter a new name such as `your_project_name.kicad_wks`
+9. Click the `Save` button at the bottom of the dialog box.
 
-GOTCHA!!!
-  Save As DOES NOT reopen the document with the new name in the root of the project.
-SO:
-open yourname.kicad_wks in the root of your project
+* **HEAD UP!** `Save As...` DOES NOT reopen the document so that you can edit it (like you might expect), you must open it manually after saving it:
 
-Leave the page layout editor window open and use your text editor to open the file "yourname.kicad_wks in the root of your project directory.
+10. Choose menu item `File | Open...`
+11. In the pop-up window navigate to the root of your project and open the `.kicad_wks` file you saved in step 9.
 
-This plain text file is composed of single line records that described the worksheet layout and add parameters that are automatically filled in from information contained in your project.
+Now you have a default worksheet template opened and ready to edit.
 
-Open Eeschema. 
-Click on the "File" menu and choose "Page Settings...".
-Loof at the bottom of the dialog for the line "Page layout description file".
-Click "Browse".
-Navigate to your project directory and select "yourname.kicad_wks"
-Click "OK".
+**Aside Note:** If you want to dive right into the text file go to the main KiCAD window and right click on the file's name in the project tree and select `Edit in a Text Editor`. You can setup KiCAD to use your preferred editor such as vim, emacs, code, notetab etc. by selecting the menu item `Preferences | Set Text Editor...` in the main KiCAD window. This plain text file is composed of single line records that described the worksheet layout and names variables that are automatically filled in from information contained in each schematic. The Projects main `.pro` file contains the reference that specifies which worksheet template to use, and each schematic can have metadata records that will populate the worksheet template for each individual schematic. [Working with the text file directly](TODO)
 
-You should immediately see that the sheet has changed from a blank page to one that has borders and a worksheet information block in the lower right corner.
+# POPULATE A SCHEMATIC WITH METADATA
+1. Start **Eeschema** from the main KiCAD window.
+2. Select `File | Page Settings...`
+3. Using the dialog box, enter any information and/or comments you want displayed in the title box of the schematic
 
-MODIFYING A DEFAULT WORKSHEET TEMPLATE:
+The metadata should appear in the worksheet of Eeschema immediately when you click the `Ok` button.
 
-Information contained in the File|Page Settings... menu are interpolated into the worksheet automatically according to a set of place holders that are called "format symbols" (!?) these are in fact template variables and are interpolated automatically by KiCAD when you complete these details in the Page Settings dialog of eeschema. 
+# MODIFYING A DEFAULT WORKSHEET TEMPLATE:
 
-The publically documented variables are:
+Information contained in the File|Page Settings... menu are interpolated into the worksheet automatically according to a set of place holders that are called "format symbols" (!?) these are in fact template variables and are interpolated automatically by KiCAD when you complete these details in the Page Settings dialog of Eeschema. The checkbox item `Export to other sheets` can be used to propogate a variable to all sheets in a project. This could be useful for the company name variable for example.
+
+## The documented variables are:
+
+### Metadata for the design
+
+    `%T` Title
+    `%Y` Company name
+    `%D` Date
+    `%R` Revision
+
+### Metadata for the document.:
+
+    `%P` File system's path to this sheet.
+    `%F` Filename
+    `%K` KiCad version
+    `%S` Sheet number
+    `%N` Number of sheets in project
+    `%Z` Paper format name (A4, USLetter …)
+
+### Additional Information:
+
+    `%%` Escapes the `'%'`, prints a `'%'` in your worksheet.
+    `%Cx` Comment (x = 0 to 9 to identify the comment)
+    
+There are no special variables for Approvals, Authors, Copyright Notices, Patent Numbers, etc. This information must be added to each document as static text or you can use the comment variables to add them to the project.
+
+
+
 
