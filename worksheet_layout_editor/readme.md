@@ -34,7 +34,7 @@ The metadata should appear in the worksheet of Eeschema immediately when you cli
 
 # MODIFYING A DEFAULT WORKSHEET TEMPLATE:
 
-Information contained in the `File | Page Settings...` menu are interpolated into the worksheet automatically according to a set of place holders that are called "format symbols" (!?) these are in fact template variables and are interpolated automatically by KiCAD when you complete these details in the Page Settings dialog of Eeschema. The checkbox item `Export to other sheets` can be used to propogate a variable to all sheets in a project. This could be useful for the company name variable for example.
+Information contained in the `File | Page Settings...` menu are interpolated into the worksheet automatically according to a set of place holders that are called "format symbols" (!?) these are in fact template variables and are interpolated automatically by KiCAD after you populate them in the `File | Page Settings...` of Eeschema. The checkbox item `Export to other sheets` can be used to propogate a variable to all sheets in a project. This could be useful for the Company name or the Revision variables for example.
 
 ## The documented variables are:
 
