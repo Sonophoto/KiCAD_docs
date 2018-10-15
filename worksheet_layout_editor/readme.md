@@ -1,4 +1,12 @@
-**VERSION:** _This documentation was created using KiCAD 5.0 (release)_
+**TITLE:** Workflow Documentation for KiCAD Page Layout Editor with Template Set
+
+**VERSION:** _This documentation was created using KiCAD 5.0.0 (stable)
+
+**CITATIONS:**
+
+1. [KiCAD 5.0.0-stable Documentation for Page Layout Editor](http://docs.kicad-pcb.org/5.0.0/) (Choose your language to go to documentation)
+2. [Source Code (mirror) for Page Layout Editor Lexer] ()
+3. [Comments in KiCAD 5.0 page_layout_default_description.cpp] (https://github.com/KiCad/kicad-source-mirror/blob/5.0/common/page_layout/page_layout_default_description.cpp)
 
 **DATE:** _07-OCT-2018_
 
