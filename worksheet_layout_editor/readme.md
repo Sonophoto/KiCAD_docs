@@ -5,7 +5,7 @@
 **CITATIONS:**
 
 1. [KiCAD 5.0.0-stable Documentation for Page Layout Editor](http://docs.kicad-pcb.org/5.0.0/) (Choose your language to go to documentation)
-2. [Source Code (mirror) for Page Layout Editor Lexer] ()
+2. [Source Code (Build Generated) for Page Layout Editor Lexer] (https://kicad-info.s3.dualstack.us-west-2.amazonaws.com/original/2X/4/44dbc845022890b690366f35acbd3e98a4ece286.h) (Thanks to @bobc for link!)
 3. [Comments in KiCAD 5.0 page_layout_default_description.cpp] (https://github.com/KiCad/kicad-source-mirror/blob/5.0/common/page_layout/page_layout_default_description.cpp)
 
 **DATE:** _07-OCT-2018_
