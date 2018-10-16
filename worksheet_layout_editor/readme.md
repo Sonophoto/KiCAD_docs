@@ -16,7 +16,7 @@
 
 1. Start Page Layout Editor in the main KiCAD window (AKA Worksheet Layout Editor)
 2. Choose menu item `File | Open...`
-3. In the dialog box navigate to the location of your KiCAD installation's shared data, on Linux/unix systems with will likely be `/usr/local/share/kicad/template` or `/usr/share/kicad/template`; on windows systems the path will likely be `C:\[TODO]`
+3. In the dialog box navigate to the location of your KiCAD installation's shared data, on Linux/unix systems this will likely be `/usr/local/share/kicad/template` or `/usr/share/kicad/template`; on windows systems the path will likely be `C:\[TODO]`
 4. Select the file named: `pagelayout_default.kicad_wks`
 5. Click the `Open` button
 6. Choose menu item `File | Save As...`
