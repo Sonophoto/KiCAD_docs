@@ -16,6 +16,8 @@ These aren't here yet!, Coming Soon!
 * [Border: Single]
 * [Border: Double]
 * [Border: Indexed Double]
+
+    [US Letter Size: 8.5x11](https://github.com/Sonophoto/KiCAD_docs/blob/master/worksheet_layout_editor/USLetter_IndexedBorder_NoTitleBox.kicad_wks)
 * [Legend: Personal Style]
 * [Legend: Company Style]
 * [Legend: Open Hardware]
