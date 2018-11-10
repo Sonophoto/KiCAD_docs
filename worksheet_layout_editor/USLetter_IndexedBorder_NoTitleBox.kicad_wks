@@ -1,0 +1,18 @@
+(page_layout
+  (setup (textsize 1.5 1.5)(linewidth 0.15)(textlinewidth 0.15)
+  (left_margin 7)(right_margin 7)(top_margin 7)(bottom_margin 7))
+
+  (rect (name Border:Rect) (start 0 0 ltcorner) (end 0 0) (repeat 2) (incrx 2) (incry 2))
+
+  (line (name TopIndexBorders:Line) (start 20 2 ltcorner) (end 20 0 ltcorner) (repeat 13) (incrx 20.3))
+  (tbtext A (name TopIndex:Text) (pos 10 1 ltcorner) (font (size 1.3 1.3)) (repeat 14) (incrx 20.3))
+
+  (line (name BottomIndexBorders:Line) (start 20 2 lbcorner) (end 20 0 lbcorner) (repeat 13) (incrx 20.3))
+  (tbtext A (name BottomIndex:Text) (pos 10 1 lbcorner) (font (size 1.3 1.3)) (repeat 14) (incrx 20.3))
+
+  (line (name LeftIndexBorders:Line) (start 0 20 ltcorner) (end 2 20 ltcorner) (repeat 9) (incry 19.5))
+  (tbtext 1 (name LeftIndex:Text) (pos 1 10 ltcorner) (font (size 0.9 1.3)) (justify center top) (repeat 9) (incry 19.5))
+
+  (line (name RightIndexBorders:Line) (start 0 20 rtcorner) (end 2 20 rtcorner) (repeat 9) (incry 19.5))
+  (tbtext 1 (name RightIndex:Text) (pos 1 10 rtcorner) (font (size 0.9 1.3)) (justify center top) (repeat 9) (incry 19.5))
+)
