@@ -1,0 +1,13 @@
+(page_layout
+  (setup (textsize 1.5 1.5)(linewidth 0.15)(textlinewidth 0.15)
+  (left_margin 7)(right_margin 7)(top_margin 7)(bottom_margin 7))
+  (rect (comment "This is the border") (name rect1:Rect) (start 0 0 ltcorner) (end 0 0) (repeat 2) (incrx 4) (incry 4))
+  (line (name segm1:Line) (start 20 4 ltcorner) (end 20 0 ltcorner) (repeat 20) (incrx 19.9))
+  (tbtext A (name text1:Text) (pos 10 2 ltcorner) (font (size 2 2)) (repeat 21) (incrx 19.9))
+  (line (name segm2:Line) (start 20 4 lbcorner) (end 20 0 lbcorner) (repeat 20) (incrx 19.9))
+  (tbtext A (name text2:Text) (pos 10 2 lbcorner) (font (size 2 2)) (repeat 21) (incrx 19.9))
+  (line (name segm3:Line) (start 0 20 ltcorner) (end 4 20 ltcorner) (repeat 13) (incry 18.8))
+  (tbtext 1 (name text3:Text) (pos 2 10 ltcorner) (font (size 2 2)) (justify center top) (repeat 14) (incry 18.8))
+  (line (name segm4:Line) (start 0 20 rtcorner) (end 4 20 rtcorner) (repeat 13) (incry 18.8))
+  (tbtext 1 (name text4:Text) (pos 2 10 rtcorner) (font (size 2 2)) (justify center top) (repeat 14) (incry 18.8))
+)
