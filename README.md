@@ -11,27 +11,32 @@ Suggestions, are always welcome, PRs will always get a response (if not accepted
 
 * [Page Layout File Format](https://github.com/Sonophoto/KiCAD_docs/blob/master/worksheet_template_editor/TextFormat.md) (Incomplete!)
 
-## Predesigned templates
-In Progress, More Coming Soon!
+* Predesigned templates
 
-* Border: Single
+    * Border: Single
 
-    [All Paper Sizes]()
+        [All Paper Sizes]()
 
-* Border: Double
+    * Border: Double
    
-    [All Paper Sizes]()
+        [All Paper Sizes]()
 
-* Border: Indexed Double
+    * Border: Indexed Double
 
-    - Note: Indexing is customized specifically to each paper size to ensure a professional appearance
+        - Note: Indexing is customized specifically to each paper size to ensure a professional appearance
 
-    [US Letter Size: 8.5x11 Landscape](https://github.com/Sonophoto/KiCAD_docs/blob/master/worksheet_template_editor/USLetter_IndexedBorder_NoTitleBox.kicad_wks)
+        [US Letter Size: 8.5x11 Landscape](https://github.com/Sonophoto/KiCAD_docs/blob/master/worksheet_template_editor/USLetter_IndexedBorder_NoTitleBox.kicad_wks)
 
-    [US Ledger Size 11x17 Landscape]()
+        [US Ledger Size 11x17 Landscape](https://github.com/Sonophoto/KiCAD_docs/blob/master/worksheet_template_editor/USLedger_IndexedBorder_NoTitleBox.kicad_wks)
 
-    in progress, up soon
+    * [Legend: Personal Style]
+    
+        Coming Next!
 
-* [Legend: Personal Style]
-* [Legend: Company Style]
-* [Legend: Open Hardware]
+    * [Legend: Company Style]
+    
+        Coming Next!
+    
+    * [Legend: Open Hardware]
+
+        Coming Next!
