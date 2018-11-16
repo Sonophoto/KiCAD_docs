@@ -9,7 +9,9 @@ Suggestions, are always welcome, PRs will always get a response (if not accepted
 
 * [Page Layout Editor](https://github.com/Sonophoto/KiCAD_docs/tree/master/worksheet_template_editor)
 
-* [Page Layout File Format](https://github.com/Sonophoto/KiCAD_docs/blob/master/worksheet_template_editor/TextFormat.md) (Incomplete!)
+* [Page Layout File Format](https://github.com/Sonophoto/KiCAD_docs/blob/master/worksheet_template_editor/TextFormat.md)
+
+    - Note: File format information is provided for programmers only
 
 * Predesigned templates
 
